@@ -23,7 +23,13 @@
   <div class="scene" id="welcome">
     <article class="content">
 
- 
+        <!--Displays Welcome Messages -->
+      <div>
+        <h1>{{welcomeMessageEng$ | async}}</h1>
+        <h1>{{welcomeMessageFre$ | async}}</h1>
+      </div>
+
+
 
       <div class="row">
         <div class=""col-12>
@@ -58,7 +64,7 @@
               </div>
               </form>
 
-        
+
         </div>
       </div>
 

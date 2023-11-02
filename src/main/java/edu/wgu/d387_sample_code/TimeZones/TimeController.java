@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
 @CrossOrigin
+@RestController
 public class TimeController {
 
     @GetMapping("/presentation")
-    public ResponseEntity<String> announcePresentation() {
+    public ResponseEntity<String> timePresentation() {
         String times = "There is a presentation starting at: " + TimeConvert.getTime();
         return new ResponseEntity<String> (times, HttpStatus.OK);
     }

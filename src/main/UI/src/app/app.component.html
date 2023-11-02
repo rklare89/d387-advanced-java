@@ -28,6 +28,10 @@
         <h1>{{welcomeMessageEng$ | async}}</h1>
         <h1>{{welcomeMessageFre$ | async}}</h1>
       </div>
+      <!-- Displays Presentation Time -->
+      <div>
+        <h1>{{presentationTimes$ | async}}</h1>
+      </div>
 
 
 
@@ -81,7 +85,7 @@
                 </td>
                 <td>
                   <strong>Room #: {{room.roomNumber}}</strong><br/>
-                  <strong>Price: ${{room.price}}</strong><br/>
+                  <strong>Price: ${{room.price}}</strong><br/>    <!--Add Prices for other countries with currency pipe-->
                   <strong>Price: {{room.priceCanada | currency:"CAD":'symbol'}}</strong><br/>
                   <strong>Price: {{room.priceEuro | currency: "EUR":'symbol'}}</strong><br/>
                 </td>

@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 
 import java.util.Locale;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class DisplayWelcomeMessageController {
 
